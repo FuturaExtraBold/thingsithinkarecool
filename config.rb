@@ -3,7 +3,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :blog do |blog|
-  # set options on blog
+  blog.sources = "articles/:title.html"
 end
 
 # Per-page layout changes
